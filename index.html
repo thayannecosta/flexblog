@@ -33,5 +33,121 @@
         </nav>
     </header>
     <h1 class="introducao">Novos valores e <br> propriedades do CSS</h1>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-info">
+            <h1>Sobre</h1>
+            <p>O CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de documentos HTML e XML. Com o passar dos anos, o CSS evoluiu significativamente, introduzindo novos valores e propriedades que permitem aos desenvolvedores web criar layouts mais flexíveis, responsivos e visualmente atraentes.</p>
+            <p>Entre os novos valores e propriedades do CSS, destacam-se o Flexbox e o Grid Layout, que facilitam a criação de layouts complexos sem a necessidade de hacks ou truques. O Flexbox permite alinhar e distribuir espaço entre itens em um contêiner, enquanto o Grid Layout oferece uma maneira poderosa de criar layouts bidimensionais.</p>
+        </div>
+        <div class="sobre-img">
+            <img src="img/sobre1.jpg" alt="Sobre 1">
+        </div>
+        <div class="sobre-img">
+            <img src="img/sobre2.jpg" alt="Sobre 2">
+        </div>
+    </section>
+    <section class="produtos" id="produtos">
+        <h1>Produtos</h1>
+        <div class="produtos-container">
+            <div class="produtos-item purple">
+                <h2>Purple</h2>
+                <img src="img/produtos1.jpg" alt="Produto 1">
+            </div>
+            <div class="produtos-item pink">
+                <h2>Pink</h2>
+                <img src="img/produtos2.jpg" alt="Produto 2">
+            </div>
+            <div class="produtos-item blue">
+                <h2>Blue</h2>
+                <img src="img/produtos3.jpg" alt="Produto 3">
+            </div>
+        </div>
+    </section>
+    <section class="preco">
+        <div class="preco-item">
+            <h2>Basic</h2>
+            <span>
+                <sup>R$</sup>19,90
+            </span>
+            <ul>
+                <li>10 projetos</li>
+                <li>5 GB de armazenamento</li>
+                <li>Suporte básico</li>
+                <li>Acesso restrito</li>
+            </ul>
+            <a href="#">Assinar</a>
+        </div>
+        <div class="preco-item destaque">
+            <h2>Pro</h2>
+            <span>
+                <sup>R$</sup>49,90
+            </span>
+            <ul>
+                <li>100 projetos</li>
+                <li>50 GB de armazenamento</li>
+                <li>Suporte prioritário</li>
+                <li>Download dos itens</li>
+                <li>Acesso total</li>
+            </ul>
+            <a href="#">Assinar</a>
+        </div>
+        <div class="preco-item">
+            <h2>Enterprise</h2>
+            <span>
+                <sup>R$</sup>99,90
+            </span>
+            <ul>
+                <li>Projetos ilimitados</li>
+                <li>200 GB de armazenamento</li>
+                <li>Suporte dedicado</li>
+                <li>Download dos itens</li>
+                <li>Compra Exclusiva</li>
+                <li>Acesso total</li>
+            </ul>
+            <a href="#">Assinar</a>
+        </div>
+    </section>
+
+    <section class="qualidade" id="qualidade">
+        <div class="qualidade-item">
+            <h2>Display</h2>
+            <p>Define o elemento como um flex container, tornando os seus filhos flex-itens. O display:flex torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Flex-Direction</h2>
+            <p>Define a direção dos flex itens. Por padrão ele é row (linha), por isso quando o display: flex; é adicionado, os elementos ficam em linha, um do lado do outro.
+            A mudança de row para column geralmente acontece quando estamos definindo os estilos em media queries para o mobile. Assim você garante que o conteúdo seja apresentado em coluna única.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Flex-Wrap</h2>
+            <p>Define se os flex itens devem ou não quebrar para a próxima linha quando não houver espaço suficiente. Por padrão, os itens não quebram e podem esticar o container. O uso de flex-wrap: wrap; permite que os itens se movam para a próxima linha, mantendo a responsividade.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Flex-Flow</h2>
+            <p>Um atalho para flex-direction e flex-wrap, permitindo definir ambas as propriedades em uma única linha. Por exemplo, flex-flow: row wrap; define a direção como linha e permite que os itens quebrem para a próxima linha.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Justify-Content</h2>
+            <p>Define como os itens são distribuídos ao longo do eixo principal. Os valores comuns incluem flex-start, flex-end, center, space-between e space-around. Isso permite um controle preciso sobre o alinhamento e o espaçamento dos itens dentro do container flex.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Align-items</h2>
+            <p>Define como os itens são alinhados ao longo do eixo transversal. Os valores comuns incluem flex-start, flex-end, center, baseline e stretch. Isso permite um controle preciso sobre o alinhamento dos itens dentro do container flex.</p>
+        </div>
+    </section>
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-info">
+            <h1>Assine nossa Newsletter</h1>
+            <p>Fique por dentro das novidades e promoções exclusivas!</p>
+        </div>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Digite seu email" required>
+            <button type="submit">Assinar</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 FlexBlog. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
